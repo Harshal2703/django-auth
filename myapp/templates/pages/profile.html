@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            username : {{username}}
+        </div>
+        <div>
+            email : {{email}}
+        </div>
+        <div>
+            date joined : {{date_joined}}
+        </div>
+        <div>
+            last updated : {{last_updated}}
+        </div>
+        <a href="/dashboard">go back to dashboard</a>
+        <form method="POST" action="/logout/">
+            {% csrf_token %}
+            <button type="submit">logout</button>
+        </form>
+    </body>
+</html>
