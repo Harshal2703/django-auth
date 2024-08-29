@@ -14,8 +14,13 @@ This project is a Django-based web application with user authentication function
 
 ## Installation
 
-1. Clone the repository:
 
    ```bash
-   git clone <repository-link>
-   cd <project-directory>
+    pip install django
+    django-admin startproject myproject
+    cd myproject
+    python manage.py startapp myapp
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py runserver
+   ```
